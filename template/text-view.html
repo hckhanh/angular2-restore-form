@@ -1,0 +1,10 @@
+<label>{{label}}</label>
+<span [hidden]="isEdit">
+	<span>{{text}}</span>
+	<button type="button" class="btn btn-default" (click)="editItem()">Edit</button>
+</span>
+<span [hidden]="!isEdit">
+	<input type="text" class="form-control" [(ngModel)]="text">
+	<button type="button" class="btn btn-default" (click)="saveItem()">Save</button>
+	<button type="button" class="btn btn-default" (click)="cancelEdit()">Cancel</button>
+</span>
