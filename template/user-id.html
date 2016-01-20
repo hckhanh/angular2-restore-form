@@ -1,0 +1,8 @@
+<div *ngIf="user">
+	<label>Id: </label>
+	<input type="text" class="form-control" [(ngModel)]="user.id">
+	<label>Name: </label>
+	<input type="text" class="form-control" [(ngModel)]="user.name">
+	<button type="button" class="btn btn-default" (click)="save()">Save</button>
+	<button type="button" class="btn btn-default" (click)="cancel()">Cancel</button>
+</div>

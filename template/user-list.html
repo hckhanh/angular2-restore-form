@@ -1,5 +1,7 @@
 <form>
 	<div class="form-group form-inline" *ngFor="#user of users">
-		<text-view [label]="label" [(text)]="user.name"></text-view>
+		<text-view [label]="user.id" [(text)]="user.name"></text-view>
+		<button type="button" class="btn btn-default" (click)="editId(user)">Edit Id</button>
 	</div>
+	<router-outlet></router-outlet>
 </form>
